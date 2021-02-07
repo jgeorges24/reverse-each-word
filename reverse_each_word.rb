@@ -27,6 +27,7 @@
 
 
     def reverse_each_word (array)
+        array.split
         my_array = []
         my_array << array.reverse()
 
