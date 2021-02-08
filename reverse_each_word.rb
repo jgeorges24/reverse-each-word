@@ -26,11 +26,16 @@
 
 
 
-    def reverse_each_word (array)
-        array.split
-        my_array = []
-        my_array << array.reverse()
-
+    def reverse_each_word (sentence)
+        # sentence.split(" ")
+        my_array = sentence.split(" ")
+        sentence.reverse()
+        
+        # binding.pry
+        # my_array << array.split(" ")
+       return my_array.collect {|t| t.reverse() }.join(" ")
+        # array.split(" ")
+        
     end
 
 
@@ -44,4 +49,3 @@
 
 
 
-# binding.pry
